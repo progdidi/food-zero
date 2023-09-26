@@ -5,6 +5,9 @@ import MenuItem from '../../components/MenuItem/MenuItem';
 import { benefits } from '../../helpers/benefits/benefits';
 import BenefitsItem from '../../components/BenefitsItem/BenefitsItem';
 
+import { blogItems } from '../../helpers/blogItems/blogItems';
+import BlogItem from '../../components/BlogItem/BlogItem';
+
 
 //images
 import promo1 from './images/promo/promo.jpg';
@@ -97,6 +100,30 @@ const MainPage = () => {
                                 name={benefit.name}
                                 descr={benefit.descr} 
                                 img={benefit.img}
+                            />
+                        )                            
+                    })}
+                </div>
+            </div>
+        </div>
+
+        <div className="blog-preview">
+            <div className="container">
+                <div className="blog-preview__inner">
+                    {blogItems.map((blog) => {
+                        return (
+                            <BlogItem
+                                key={blog.id}
+                                name={blog.name}
+                                descr={blog.descr} 
+                                img={blog.img}
+                                tag={blog.tag}
+                                date={blog.date}
+                                time={blog.time}
+                                comments={blog.comments}
+                                author={blog.author}
+                                authorImg={blog.authorImg}
+                                link={blog.link}
                             />
                         )                            
                     })}

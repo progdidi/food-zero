@@ -8,6 +8,9 @@ import BenefitsItem from '../../components/BenefitsItem/BenefitsItem';
 import { blogItems } from '../../helpers/blogItems/blogItems';
 import BlogItem from '../../components/BlogItem/BlogItem';
 
+import { categories } from '../../helpers/categories/categories';
+import CategoryItem from '../../components/CategoryItem/CategoryItem';
+
 
 //images
 import promo1 from './images/promo/promo.jpg';
@@ -145,6 +148,25 @@ const MainPage = () => {
                     
                     <button type="submit" className="reservation__form-btn">Book Now</button>
                 </form>
+            </div>
+        </section>
+
+        <section className="categories">
+            <div className="container">
+                <h3 className="categories__title section__title">Calories Energy Balance</h3>
+                <p className="categories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <div className="categories__inner">
+                    {categories.map((category) => {
+                        return (
+                            <CategoryItem
+                                key={category.id}
+                                category={category.category}
+                                img={category.categoryImg}
+                                link={category.link}
+                            />
+                        )                            
+                    })}
+                </div>
             </div>
         </section>
         </>

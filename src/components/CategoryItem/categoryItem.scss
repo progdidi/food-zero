@@ -1,0 +1,14 @@
+@import '../../style/base/vars.scss';
+
+.category-item {
+    position: relative;
+    &__link {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        top: 48px;
+        left: 40px;  
+
+    }
+}

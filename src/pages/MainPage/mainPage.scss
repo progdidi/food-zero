@@ -180,6 +180,28 @@
     }
 }
 
+.categories {
+    padding: 128px 138px;
+    &__title {
+        text-align: center;
+        margin-bottom: 18px;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    &__descr {
+        text-align: center;
+        color: $dark-grey-color;
+        margin-bottom: 126px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 60px;
+    }
+}
+
 
 
 

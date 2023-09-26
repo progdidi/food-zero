@@ -103,6 +103,31 @@
     }
 }
 
+.ecxellent {
+    background-image: url(images/ExcellentBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 222px;
+    height: 100vh;
+    &__inner {
+        max-width: 650px;
+        margin-left: auto;
+    }
+    
+    &__title {
+        margin-bottom: 18px;
+    }
+}
+
+.benefits {
+    padding: 207px 0 190px;
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 
 
 

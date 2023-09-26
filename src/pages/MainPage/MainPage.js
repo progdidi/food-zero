@@ -2,6 +2,9 @@
 import { menuItems } from '../../helpers/menu';
 import MenuItem from '../../components/MenuItem/MenuItem';
 
+import { benefits } from '../../helpers/benefits/benefits';
+import BenefitsItem from '../../components/BenefitsItem/BenefitsItem';
+
 
 //images
 import promo1 from './images/promo/promo.jpg';
@@ -73,6 +76,33 @@ const MainPage = () => {
                 </div>
             </div>
         </section>
+
+        <section className="ecxellent">
+            <div className="container">
+                <div className="ecxellent__inner">
+                    <h3 className="ecxellent__title section__title">Excellent cook</h3>
+                    <p className="ecxellent__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus lorem id penatibus imperdiet. Turpis egestas ultricies purus auctor tincidunt lacus nunc. </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <div className="benefits">
+            <div className="container">
+                <div className="benefits__inner">
+                    {benefits.map((benefit) => {
+                        return (
+                            <BenefitsItem
+                                key={benefit.id}
+                                name={benefit.name}
+                                descr={benefit.descr} 
+                                img={benefit.img}
+                            />
+                        )                            
+                    })}
+                </div>
+            </div>
+        </div>
         </>
      );
 }

@@ -1,7 +1,12 @@
+//components
+
+
 import './mainPage.scss';
 
 const MainPage = () => {
-    return (  );
+    return ( 
+        <></>
+     );
 }
  
 export default MainPage;

@@ -6,7 +6,7 @@ const BenefitsItem = ({img, name, descr}) => {
             <div className="benefits__item-media">
                 <img src={img} alt="image" className="benefits__item-img" />
             </div>
-            <h6 className="benefits__item-title">{name}</h6>
+            <h6 className="benefits__item-title item__title">{name}</h6>
             <p className="benefits__item-descr">{descr}</p>
         </div>
      );

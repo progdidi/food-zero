@@ -56,10 +56,33 @@
     }
 
     &__title {
+        padding-bottom: 18px;
+        border-bottom: 2px solid #000;
+        margin-bottom: 18px;
     }
     &__descr {
+        color: $dark-grey-color;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.44px;
+        margin-bottom: 46px;
     }
     &__link {
+        display: inline-block;
+        padding-right: 60px;
+        position: relative;
+        line-height: 28px;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url(./arrow.svg);
+            width: 48px;
+            height: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
     }
 }
 

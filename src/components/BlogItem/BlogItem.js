@@ -16,7 +16,7 @@ const BlogItem = ({name, tag, date, time, comments, author, authorImg, descr, im
                 <p className="blog-item__info-text">{comments} comments</p>
             </div>
 
-            <h5 className="blog-item__title">{name}</h5>
+            <h5 className="blog-item__title item__title">{name}</h5>
             <p className="blog-item__descr">{descr}</p>
 
             <a href={link} className="blog-item__link">Read More</a>

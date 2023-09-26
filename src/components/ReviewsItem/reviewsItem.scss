@@ -1,0 +1,33 @@
+@import '../../style/base/vars.scss';
+
+.review-item {
+    &__text {
+        margin-bottom: 86px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+
+        .review-item__author {
+            &-name {
+                margin-bottom: 6px;
+                font-family: "Rufina", sans-serif;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+
+            }
+
+            &-field {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.36px;
+                color: $dark-grey-color;
+
+            }
+        }
+    }
+}

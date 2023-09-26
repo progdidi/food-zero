@@ -11,6 +11,9 @@ import BlogItem from '../../components/BlogItem/BlogItem';
 import { categories } from '../../helpers/categories/categories';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
 
+import { reviews } from '../../helpers/reviews/reviews';
+import ReviewsItem from '../../components/ReviewsItem/ReviewsItem';
+
 
 //images
 import promo1 from './images/promo/promo.jpg';
@@ -169,6 +172,31 @@ const MainPage = () => {
                 </div>
             </div>
         </section>
+
+        <div className="reviews">
+            <div className="container">
+                <div className="reviews__inner">
+                    <div className="reviews__slider">
+                        {reviews.map((review) => {
+                            return (
+                                <ReviewsItem
+                                    key={review.id}
+                                    text={review.text}
+                                    author={review.author} 
+                                    authorImg={review.authorImg}
+                                    authorField={review.authorField}
+                                />
+                            )                            
+                        })}
+                    </div>
+
+                    <div className="reviews__slider-buttons">
+                        <button className="reviews__slider-btn"></button>
+                        <button className="reviews__slider-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </>
      );
 }

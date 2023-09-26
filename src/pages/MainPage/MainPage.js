@@ -1,5 +1,7 @@
 //components
-import './mainPage.scss';
+import { menuItems } from '../../helpers/menu';
+import MenuItem from '../../components/MenuItem/MenuItem';
+
 
 //images
 import promo1 from './images/promo/promo.jpg';
@@ -8,6 +10,9 @@ import spices2 from './images/promo/spices2.png';
 import spices3 from './images/promo/spices3.png';
 import promo2 from './images/promo/promo2.jpg';
 import promo3 from './images/promo/promo3.jpg';
+
+//style
+import './mainPage.scss';
 
 const MainPage = () => {
     return ( 
@@ -47,6 +52,25 @@ const MainPage = () => {
 
                 </div>
                 
+            </div>
+        </section>
+
+        <section className="our-menu">
+            <div className="container">
+                <h3 className="our-menu__title section__title">Our Menu</h3>
+                <p className="our-menu__descr">This is a section of your menu. Give your section a brief description</p>
+                <div className="our-menu__info">
+                    {menuItems.map((dish) => {
+                        return (
+                            <MenuItem
+                                key={dish.id}
+                                dish={dish.dish}
+                                descr={dish.descr} 
+                                price={dish.price}
+                            />
+                        )                            
+                    })}
+                </div>
             </div>
         </section>
         </>

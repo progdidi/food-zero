@@ -8,10 +8,18 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 140%;
+    letter-spacing: 0.48px;
 }
 
 .container {
     max-width: 1670px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.section__title {
+    font-family: "Rufina", sans-serif;
+    font-size: 108px;
+    font-weight: 700;
+    line-height: 120px;
 }

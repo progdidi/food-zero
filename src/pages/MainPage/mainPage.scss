@@ -84,6 +84,26 @@
     
 }
 
+.our-menu {
+    background-image: url(images/menuSectionBg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 176px 0 218px;
+    &__title {
+        margin-bottom: 18px;
+    }
+    &__descr {
+        margin-bottom: 158px;
+    }
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 108px;
+    }
+}
+
+
 
 
 

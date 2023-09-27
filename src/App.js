@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import MenuPage from "./pages/MenuPage/MenuPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <main className="main">
           {/* <MainPage/> */}
           {/* <MenuPage/> */}
-          <ContactsPage/>
+          {/* <ContactsPage/> */}
+          <AboutPage/>
         </main>      
       <Footer/>
     </div>

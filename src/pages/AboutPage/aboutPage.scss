@@ -1,0 +1,55 @@
+@import '../../style/base/vars.scss';
+
+.about-us {
+    padding: 218px 0 300px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url(./images/bg.svg);
+        width: 400px;
+        height: 330px;
+        background-repeat: no-repeat;
+        top: 94px;
+        left: 40%;
+
+    }
+    &__story {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 117px;
+        margin-bottom: 162px;
+        &-info {
+            max-width: 40%;
+            .about-us__story-title {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    &__staff {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about-us__staff-info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            .about-us__staff-title {
+                @include font68;
+            }
+        }
+        
+        .about-us__staff-about {
+            max-width: 510px;
+        }
+    }
+}
+
+
+
+
+

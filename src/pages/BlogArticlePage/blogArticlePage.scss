@@ -1,1 +1,94 @@
 @import '../../style/base/vars.scss';
+
+.blog-article {
+    padding: 128px 0;
+    color: $dark-grey-color;
+    .blog-article__content {
+        .blog-article__text {
+            max-width: 70%;
+            margin: 0 auto;
+            margin-bottom: 106px;
+            &.main-text {
+                @include font32;
+                color: $dark-grey-color;
+                max-width: 100%;
+            }
+        }
+        
+        .blog-article__media {
+            margin-bottom: 106px;
+            display: flex;
+            justify-content: space-between;
+            .blog-article__img {
+            }
+        }
+    
+        .blog-article__quote {
+            padding: 173px 0 200px;
+            background-image: url(./images/quote.png);
+            background-repeat: no-repeat;
+            color: #fff;
+            margin-bottom: 106px;
+            display: block;
+            width: 100%;
+            &-text {
+                max-width: 80%;
+                margin: 0 auto;
+                font-size: 38px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: 140%;
+            }
+        }
+    }
+    
+    .blog-article__tags {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin-bottom: 106px;
+        @include font32;
+        .blog-article__tag {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.36px;
+            text-align: center;
+        }
+    }
+
+    .blog-article__author {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        align-items: center;
+        .blog-article__author-img {
+        }
+        .blog-article__author-info {
+        }
+        .blog-article__author-name {
+            @include font32;
+            margin-bottom: 28px;
+            color: #000;
+        }
+        .blog-article__author-descr {
+            
+        }
+    }
+}
+.related {
+    .related__inner {
+    }
+}
+
+.comments {
+    .comments__items{
+    }
+    .comments__form {
+    }
+}
+

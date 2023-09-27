@@ -20,8 +20,8 @@ function App() {
           {/* <AboutPage/> */}
           {/* <PortfolioPage/> */}
           {/* <DishPage/> */}
-          <BlogPage/>
-          {/* <BlogArticlePage/> */}
+          {/* <BlogPage/> */}
+          <BlogArticlePage/>
         </main>      
       <Footer/>
     </div>

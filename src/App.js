@@ -6,6 +6,8 @@ import MenuPage from "./pages/MenuPage/MenuPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
 import DishPage from "./pages/DishPage/DishPage";
+import BlogPage from "./pages/BlogPage/BlogPage";
+import BlogArticlePage from "./pages/BlogArticlePage/BlogArticlePage";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           {/* <ContactsPage/> */}
           {/* <AboutPage/> */}
           {/* <PortfolioPage/> */}
-          <DishPage/>
+          {/* <DishPage/> */}
+          <BlogPage/>
+          {/* <BlogArticlePage/> */}
         </main>      
       <Footer/>
     </div>

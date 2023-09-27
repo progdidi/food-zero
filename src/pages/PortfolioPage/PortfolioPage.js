@@ -40,7 +40,7 @@ const PortfolioPage = () => {
                             })}
                         </div>  
 
-                        <button className="portfolio__btn main-btn">Load more</button>
+                        <button className="portfolio__btn load-btn">Load more</button>
                     </div>
 
                                       

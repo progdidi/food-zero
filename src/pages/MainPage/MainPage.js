@@ -123,21 +123,26 @@ const MainPage = () => {
             <div className="container">
                 <div className="blog-preview__inner">
                     {blogItems.map((blog) => {
-                        return (
-                            <BlogItem
-                                key={blog.id}
-                                name={blog.name}
-                                descr={blog.descr} 
-                                img={blog.img}
-                                tag={blog.tag}
-                                date={blog.date}
-                                time={blog.time}
-                                comments={blog.comments}
-                                author={blog.author}
-                                authorImg={blog.authorImg}
-                                link={blog.link}
-                            />
-                        )                            
+                        if(blog.main) {
+                            return (
+                                <BlogItem
+                                    key={blog.id}
+                                    name={blog.name}
+                                    descr={blog.descr} 
+                                    img={blog.img}
+                                    tag={blog.tag}
+                                    date={blog.date}
+                                    time={blog.time}
+                                    comments={blog.comments}
+                                    author={blog.author}
+                                    authorImg={blog.authorImg}
+                                    link={blog.link}
+                                />
+                            )   
+                        } else {
+                            return '';
+                        }
+                                               
                     })}
                 </div>
             </div>

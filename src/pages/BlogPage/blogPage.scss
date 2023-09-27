@@ -1,0 +1,14 @@
+@import '../../style/base/vars.scss';
+
+.blog {
+    padding: 128px 0;
+    &__inner {
+        .blog-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 100px;
+            margin-bottom: 120px;
+        }
+    }
+}

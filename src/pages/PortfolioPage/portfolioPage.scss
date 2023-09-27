@@ -1,0 +1,41 @@
+@import '../../style/base/vars.scss';
+
+.portfolio {
+    padding: 120px 0 110px;
+    &__inner {
+    }
+    &__cats {
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        margin-bottom: 48px;
+        &-btn {
+            font-size: 34px;
+            font-style: normal;
+            line-height: 140%;
+            letter-spacing: 2.04px;
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s;
+            &:hover {
+                border-bottom: 1px solid #000;
+            }
+        }
+    }
+    
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px;
+        margin-bottom: 123px;
+    }
+
+    &__btn {
+        display: block;
+        width: 183px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 0.48px;
+    }
+}

@@ -1,5 +1,5 @@
 //components
-import { menuItems } from '../../helpers/menu';
+import { menuItems } from '../../helpers/menu/menu';
 import MenuItem from '../../components/MenuItem/MenuItem';
 
 import { benefits } from '../../helpers/benefits/benefits';

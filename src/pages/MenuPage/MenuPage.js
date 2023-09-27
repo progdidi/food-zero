@@ -2,7 +2,7 @@
 import PagePromo from "../../components/PagePromo/PagePromo";
 import ReservationSection from "../../components/ReservationSection/ReservationSection";
 
-import { menuItems } from '../../helpers/menu';
+import { menuItems } from '../../helpers/menu/menu';
 import MenuItem from '../../components/MenuItem/MenuItem';
 
 //images

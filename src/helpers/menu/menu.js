@@ -1,3 +1,10 @@
+import fishMawn from './images/fishMaw.png';
+import prawn from './images/prawn.png';
+import premiumFillet from './images/premiumFillet.png';
+import pumpkinSoup from './images/pumpkinSoup.png';
+import steakRosemary from './images/steakRosemary.png';
+import wine from './images/wine.png';
+
 const menuItems = [
     // starters
     {
@@ -85,6 +92,66 @@ const menuItems = [
         id: 9
     },
 
+    // portfolio
+    {
+        dish: 'Premium Deep Sea Snow White Cod Fillet',
+        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+        price: 90,
+        category: 'portfolio',
+        main: false,
+        img: premiumFillet,
+        id: 10
+    },
+
+    {
+        dish: 'Option of natural wine available',
+        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+        price: 90,
+        category: 'portfolio',
+        main: false,
+        img: wine,
+        id: 11
+    },
+
+    {
+        dish: 'Best pumpkin for pumpkin soup',
+        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+        price: 90,
+        category: 'portfolio',
+        main: false,
+        img: pumpkinSoup,
+        id: 12
+    },
+
+    {
+        dish: 'Strip Steak With Rosemary Butter',
+        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+        price: 90,
+        category: 'portfolio',
+        main: false,
+        img: steakRosemary,
+        id: 13
+    },
+
+    {
+        dish: 'Braised Sliced Abalone,Fish Maw with Premium Seafood',
+        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+        price: 90,
+        category: 'portfolio',
+        main: false,
+        img: fishMawn,
+        id: 14
+    },
+
+    {
+        dish: 'Pan Fried Live Prawn with Superior Soy Sauce',
+        descr: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ', 
+        price: 90,
+        category: 'portfolio',
+        main: false,
+        img: prawn,
+        id: 15
+    }
 
 
 

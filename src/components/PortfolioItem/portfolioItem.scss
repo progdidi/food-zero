@@ -1,0 +1,21 @@
+@import '../../style/base/vars.scss';
+
+.portfolio-item {
+    position: relative;
+    &__info {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 64px 42px;
+        max-width: 710px;
+        color: #fff;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+
+    }
+
+}

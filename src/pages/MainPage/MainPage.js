@@ -14,6 +14,8 @@ import CategoryItem from '../../components/CategoryItem/CategoryItem';
 import { reviews } from '../../helpers/reviews/reviews';
 import ReviewsItem from '../../components/ReviewsItem/ReviewsItem';
 
+import ReservationSection from '../../components/ReservationSection/ReservationSection';
+
 
 //images
 import promo1 from './images/promo/promo.jpg';
@@ -25,6 +27,7 @@ import promo3 from './images/promo/promo3.jpg';
 
 //style
 import './mainPage.scss';
+
 
 const MainPage = () => {
     return ( 
@@ -137,22 +140,7 @@ const MainPage = () => {
             </div>
         </div>
 
-        <section className="reservation">
-            <div className="container">
-                <h3 className="reservation__title section__title">Make a Reservation</h3>
-                <p className="reservation__descr">Get in touch with restaurant</p>
-
-                <form action="" className="reservation__form">
-                    <div className="reservation__form-info">
-                        <input type="date" className="reservation__form-input" />
-                        <input type="text" className="reservation__form-input" />
-                        <input type="text" className="reservation__form-input" />
-                    </div>
-                    
-                    <button type="submit" className="reservation__form-btn">Book Now</button>
-                </form>
-            </div>
-        </section>
+        <ReservationSection/>
 
         <section className="categories">
             <div className="container">

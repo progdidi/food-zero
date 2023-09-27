@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
-import MainPage from "./pages/MainPage/MainPage";
 import Footer from "./components/Footer/Footer";
+import MainPage from "./pages/MainPage/MainPage";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import MenuPage from "./pages/MenuPage/MenuPage";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       <Header/>
         <main className="main">
           {/* <MainPage/> */}
-          <MenuPage/>
+          {/* <MenuPage/> */}
+          <ContactsPage/>
         </main>      
       <Footer/>
     </div>

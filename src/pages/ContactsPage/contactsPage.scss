@@ -1,0 +1,40 @@
+@import '../../style/base/vars.scss';
+
+.contacts {
+    padding-top: 272px;
+    padding-bottom: 40px;
+    @include font32;
+    color: $dark-green-color;
+    position: relative;
+    &__item {
+        margin-bottom: 145px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        &-info {
+            .contacts__item-link {
+                color: $green-color;
+            }
+            .contacts__item-btn {
+                margin-top: 53px;
+                
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url(./images/contactsBG.svg);
+        top: 152px;
+        background-repeat: no-repeat; 
+        width: 446px;
+        height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -2;
+   }
+
+   
+}

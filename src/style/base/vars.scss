@@ -4,3 +4,10 @@ $green-color: #9CAA00;
 $dark-grey-color: #4D4D4D;
 $grey-color: #B0B0B0;
 $light-grey-color: #EBF0E4;
+
+@mixin font32 {
+    font-family: "Rufina", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}

@@ -1,0 +1,55 @@
+@import '../../style/base/vars.scss';
+
+.dish-article {
+    padding: 176px 0 222px;
+    .dish-article__main {
+        .dish-article__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 198px;
+            &:last-child {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                .dish-article__text {
+                    margin-bottom: 122px;
+                }
+            }
+        }
+        .dish-article__info {
+            max-width: 510px;
+        }
+        .dish-article__subtitle {
+            margin-bottom: 12px;
+        }
+    }
+    
+    
+    
+}
+
+.dish-article__links {
+    padding: 118px 0 140px;
+    background-color: $light-grey-color;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dish-article__link {
+        &-text {
+            margin-bottom: 22px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 140%;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+        }
+        &-name {
+            @include font32;
+        }
+    }
+    
+    
+}

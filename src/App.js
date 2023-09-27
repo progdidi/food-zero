@@ -1,3 +1,5 @@
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
@@ -11,20 +13,25 @@ import BlogArticlePage from "./pages/BlogArticlePage/BlogArticlePage";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-        <main className="main">
-          {/* <MainPage/> */}
-          {/* <MenuPage/> */}
-          {/* <ContactsPage/> */}
-          {/* <AboutPage/> */}
-          {/* <PortfolioPage/> */}
-          {/* <DishPage/> */}
-          {/* <BlogPage/> */}
-          <BlogArticlePage/>
-        </main>      
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header/>
+          <main className="main">
+            <Routes>
+              <Route path="/" element={<MainPage/>} />
+              <Route path="/menu" element={<MenuPage/>} />
+              <Route path="/contacts" element={<ContactsPage/>} />
+              <Route path="/about" element={<AboutPage/>} />
+              <Route path="/portfolio" element={<PortfolioPage/>} />
+              <Route path="/dish" element={<DishPage/>} />
+              <Route path="/blog" element={<BlogPage/>} />
+              <Route path="/article" element={<BlogArticlePage/>} />
+            </Routes>
+          </main>      
+        <Footer/>
+      </div>
+
+    </Router>
   );
 }
 

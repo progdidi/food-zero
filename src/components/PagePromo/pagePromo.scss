@@ -1,1 +1,25 @@
 @import '../../style/base/vars.scss';
+
+.page-promo {
+    color: #fff;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 142px;
+
+    &__title {
+        font-family: "Rufina", sans-serif;
+        font-size: 148px;
+        font-weight: 700;
+        line-height: 152px;
+        margin-bottom: 50px;
+    }
+
+    &__descr {
+        font-family: "Rufina", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px; 
+
+    }
+}

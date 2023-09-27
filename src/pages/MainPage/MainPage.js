@@ -76,14 +76,17 @@ const MainPage = () => {
                 <p className="our-menu__descr">This is a section of your menu. Give your section a brief description</p>
                 <div className="our-menu__info">
                     {menuItems.map((dish) => {
-                        return (
-                            <MenuItem
-                                key={dish.id}
-                                dish={dish.dish}
-                                descr={dish.descr} 
-                                price={dish.price}
-                            />
-                        )                            
+                        if(dish.main) {
+                            return (
+                                <MenuItem
+                                    key={dish.id}
+                                    dish={dish.dish}
+                                    descr={dish.descr} 
+                                    price={dish.price}
+                                />
+                            ) 
+                        }
+                                                   
                     })}
                 </div>
             </div>

@@ -1,0 +1,50 @@
+@import '../../style/base/vars.scss';
+
+.new-menu {
+    padding-top: 122px;
+    padding-bottom: 68px;
+    background-image: url(images/menuBg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    &__section {
+        padding-bottom: 140px;
+        margin-bottom: 82px;
+        &-title {
+            text-align: center;
+            margin-bottom: 18px;
+            
+        }
+        &-descr {
+            text-align: center;
+            margin-bottom: 81px;
+        }
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 100px;
+        }
+
+        &:last-child {
+            padding-top: 100px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url(./images/menuDrinksBg.svg);
+                background-repeat: no-repeat;
+                width: 350px;
+                height: 420px;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .new-menu__section-descr {
+                margin-bottom: 160px;
+            }
+        }
+    }
+}
+
+
+

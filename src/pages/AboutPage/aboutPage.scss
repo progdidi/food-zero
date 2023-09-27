@@ -49,6 +49,96 @@
     }
 }
 
+.video {
+    min-height: 100vh;
+    background-image: url(./images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__descr {
+        margin-bottom: 82px;
+    }
+}
+
+.process {
+    position: relative;
+    padding: 267px 0 320px;
+    &__title {
+        margin-bottom: 174px;
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 118px;
+        &-group {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &.second {
+            flex-direction: column;
+            padding-bottom: 100px;
+            .process__item-img {
+                margin-bottom: 46px;
+            }
+        }
+        &.third {
+            padding-top: 100px;
+            flex-direction: column-reverse;
+            .process__item-descr {
+                margin-bottom: 46px;
+            }
+        }
+        &-title {
+            margin-bottom: 28px;
+            font-family: "Rufina", sans-serif;
+            font-size: 88px;
+            font-weight: 700;
+            line-height: 120%;
+        }
+        &-descr {
+            max-width: 610px;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        background-image: url(./images/processBg1.svg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 600px;
+        top: 0;
+        right: 0;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url(./images/processBg2.svg);
+        background-repeat: no-repeat;
+        width: 700px;
+        height: 600px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+
+
+
 
 
 

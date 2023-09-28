@@ -42,7 +42,6 @@ const MainPage = () => {
                         <div className="promo__main-scroll">Scroll</div>
                     </div>
                     <div className="promo__media">
-                        <img src={promo1} alt="image" className="promo__media-img" />
                         <div className="promo__media-spices">
                             <img src={spices1} alt="spices" className="spices-img" />
                             <img src={spices2} alt="spices" className="spices-img" />

@@ -5,16 +5,26 @@
     background-color: $dark-green-color;
     color: #fff;
     .promo__inner {
+        padding-bottom: 350px;
+        margin-bottom: 240px;
         display: flex;
         min-height: 100vh;
+        position: relative;
+        background-image: url(./images/promo/promo.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
         .promo__main {
             position: relative;
             &-title {
                 font-family: "Rufina", sans-serif;
                 font-size: 148px;
+                width: 1400px;
                 font-weight: 700;
                 line-height: 152px;
                 margin-bottom: 50px;
+            }
+            &-text {
+                margin-bottom: 170px;
             }
             &-scroll {
                 font-family: Rufina;
@@ -28,19 +38,19 @@
         }
 
         .promo__media {
-            &-img {
-                width: 792px;
-                height: 931px;
-                position: absolute;
-                bottom: 83px;
-            }
+            // &-img {
+            //     width: 792px;
+            //     height: 931px;
+            //     position: absolute;
+            //     top: 10%;
+            //     right: 0;
+            // }
             &-spices {
                 display: flex;
                 gap: 44px;
                 position: absolute;
                 bottom: 0;
-                left: 50%;
-
+                right: 20%;
                 .spices-img {
                     width: 260px;
                     height: 240px;

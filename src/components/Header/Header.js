@@ -1,3 +1,5 @@
+import React, {useState} from 'react';
+
 import logo from './images/Logo.svg';
 import './header.scss';
 
@@ -5,6 +7,13 @@ import './header.scss';
 import SocialList from '../SocialList/SocialList';
 
 const Header = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenuOpen = () => {
+        setMenuOpen(!menuOpen);
+    }
+
     return ( 
         <>
         <header className="header">
@@ -13,14 +22,14 @@ const Header = () => {
                     <div className="header__inner">
                         <a href="#" className="logo"><img src={logo} alt="logo" className="logo__img" /></a>
                         <div className="menu">
-                            <button className="menu__btn">
+                            <button className="menu__btn" onClick={toggleMenuOpen}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </button>
 
-                            <div className="menu__info">
-                                <button className="menu__info-close">x</button>
+                            <div className={menuOpen ? "menu__info open" : "menu__info"}>
+                                <button className="menu__info-close" onClick={toggleMenuOpen}>x</button>
                                 <div className="menu__info-inner">
                                     <nav className="menu__nav">
                                         <ul className="menu__list">

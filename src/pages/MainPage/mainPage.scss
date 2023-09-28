@@ -1,20 +1,19 @@
 @import '../../style/base/vars.scss';
 
 .promo {
-    padding-top: 102px;
+    padding-top: 252px;
     background-color: $dark-green-color;
     color: #fff;
-    .promo__inner {
+    .promo__inner {        
+        position: relative;
         padding-bottom: 350px;
         margin-bottom: 240px;
         display: flex;
         min-height: 100vh;
-        position: relative;
         background-image: url(./images/promo/promo.jpg);
         background-repeat: no-repeat;
         background-position: right bottom;
         .promo__main {
-            position: relative;
             &-title {
                 font-family: "Rufina", sans-serif;
                 font-size: 148px;
@@ -31,20 +30,13 @@
                 font-size: 48px;
                 font-weight: 700;
                 line-height: 64px;
-                transform: rotate(90deg);
                 position: absolute;
+                transform: rotate(90deg);
                 left: 0;
             }
         }
 
         .promo__media {
-            // &-img {
-            //     width: 792px;
-            //     height: 931px;
-            //     position: absolute;
-            //     top: 10%;
-            //     right: 0;
-            // }
             &-spices {
                 display: flex;
                 gap: 44px;

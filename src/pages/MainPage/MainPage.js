@@ -117,7 +117,7 @@ const MainPage = () => {
                 </div>
             </div>
         </div>
-{/* 
+
         <div className="blog-preview">
             <div className="container">
                 <div className="blog-preview__inner">
@@ -176,7 +176,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-        </div>  */}
+        </div> 
         </>
      );
 }

@@ -94,6 +94,11 @@ input {
         font-size: 75px;
         line-height: 80px;
     }
+
+    .item__title {
+        font-size: 41px;
+        line-height: 50px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -104,6 +109,18 @@ input {
     .section__title {
         font-size: 54px;
         line-height: 69px;
+    }
+
+    .item__title {
+        font-size: 35px;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 420px) {
+    .item__title {
+        font-size: 28px;
+        line-height: 37px;
     }
 }
 

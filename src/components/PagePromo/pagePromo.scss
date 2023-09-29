@@ -30,3 +30,19 @@
         line-height: 132px;
     }
 }
+
+@media (max-width: 700px) {
+    .page-promo__title {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 82px;
+    }
+}
+
+@media (max-width: 500px) {
+    .page-promo__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+    }
+}

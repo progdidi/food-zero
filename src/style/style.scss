@@ -118,6 +118,11 @@ input {
 }
 
 @media (max-width: 420px) {
+    .section__title {
+        font-size: 45px;
+        line-height: 52px;
+    }
+
     .item__title {
         font-size: 28px;
         line-height: 37px;

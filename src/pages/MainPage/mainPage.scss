@@ -114,6 +114,7 @@
     background-size: cover;
     padding-top: 222px;
     height: 100vh;
+    background-color: $light-grey-color;
     &__inner {
         max-width: 650px;
         margin-left: auto;
@@ -184,6 +185,12 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .ecxellent {
+        padding-top: 150px;
+    }
+}
+
 @media (max-width: 1100px) {
     .promo {
         .promo__inner {
@@ -203,9 +210,15 @@
             }
         }
     }
+
+    .ecxellent {
+        padding-top: 100px;
+        background-position: center ;
+        background-size: 100%;
+    }
 }
 
-@media (max-width: 845px) {
+@media (max-width: 860px) {
     .promo {
         padding-top: 220px;
         .promo__inner {
@@ -240,6 +253,20 @@
                     margin-bottom: 30px;
                 }
             }
+        }
+    }
+
+    .our-menu {
+        padding: 76px 0 118px;
+        max-width: 90%;
+        margin: 0 auto;
+        &__descr {
+            margin-bottom: 80px;
+        }
+        &__info {
+            
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -296,6 +323,7 @@
             
         }
     }
+
 }
 
 

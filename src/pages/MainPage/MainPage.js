@@ -100,7 +100,7 @@ const MainPage = () => {
                 
             </div>
         </section>
-
+{/* 
         <div className="benefits">
             <div className="container">
                 <div className="benefits__inner">
@@ -176,7 +176,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>  */}
         </>
      );
 }

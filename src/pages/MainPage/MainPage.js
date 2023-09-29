@@ -100,7 +100,7 @@ const MainPage = () => {
                 
             </div>
         </section>
-{/* 
+
         <div className="benefits">
             <div className="container">
                 <div className="benefits__inner">
@@ -117,7 +117,7 @@ const MainPage = () => {
                 </div>
             </div>
         </div>
-
+{/* 
         <div className="blog-preview">
             <div className="container">
                 <div className="blog-preview__inner">

@@ -128,9 +128,9 @@
 .benefits {
     padding: 207px 0 190px;
     &__inner {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 40px ;
     }
 }
 
@@ -189,6 +189,7 @@
     .ecxellent {
         padding-top: 150px;
     }
+
 }
 
 @media (max-width: 1100px) {
@@ -215,6 +216,13 @@
         padding-top: 100px;
         background-position: center ;
         background-size: 100%;
+    }
+
+    .benefits {
+        padding: 170px 0;
+        &__inner {
+            grid-column-gap: 20px ;
+        }
     }
 }
 
@@ -269,6 +277,21 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
+    .benefits {
+        padding: 100px 0;
+        .benefits__inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .benefits__item {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    
 }
 
 @media (max-width: 680px) {

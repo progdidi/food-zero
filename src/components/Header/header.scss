@@ -56,6 +56,7 @@
                 }
 
                 &-inner {
+                    padding-top: 5%;
                     max-width: 80%;
                     margin: 0 auto;
                     display: flex;
@@ -77,6 +78,9 @@
                                     width: 12px;
                                     height: 12px;
                                     border-radius: 50%;
+                                }
+                                &:last-child {
+                                    margin-bottom: 0;
                                 }
                                 
                             }
@@ -153,14 +157,31 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .header__inner .menu .menu__info-inner {
+        padding-top: 15%;
+        .menu__contacts {
+            width: auto;
+        }
+    }
+}
+
 @media (max-width: 1100px) {
     .header {
         &__inner {
             .header__info-btn {
                 padding: 14px 30px;
             }
+
+            .menu .menu__info-inner {
+                padding-top: 15%;
+                .menu__contacts {
+                    width: auto;
+                }
+            }
         }
     }
+    
 }
 
 @media (max-width: 850px) {
@@ -173,8 +194,17 @@
                 flex-direction: column-reverse;
                 gap: 15px;
             }
+
+            .menu .menu__info-inner {
+                padding-top: 30%;
+                .menu__nav .menu__list-link {
+                    font-size: 54px;
+                }
+            }
         }
     }
+
+    
 }
 
 @media (max-width: 720px) {
@@ -186,6 +216,18 @@
             .header__info {
                 &-btn {
                     padding: 10px 20px;
+                }
+            }
+
+            .menu .menu__info-inner {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 7%;
+                .menu__nav {
+                    margin-bottom: 70px;
+                }
+                .menu__contacts {
                 }
             }
         }
@@ -206,6 +248,13 @@
                     height: 55px;
                     padding: 12px;
                 }
+
+                .menu__info-inner {
+                    padding-top: 23%;
+                    .menu__nav .menu__list-link {
+                        font-size: 37px;
+                    }
+                }
             }
             .header__info {
                 margin-left: 0;
@@ -215,7 +264,11 @@
                     padding: 5px 11px;
                 }
             }
+
+            
         }
+
+        
     }
 }
 

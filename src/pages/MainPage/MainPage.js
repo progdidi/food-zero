@@ -68,7 +68,7 @@ const MainPage = () => {
                 
             </div>
         </section>
-{/* 
+
         <section className="our-menu">
             <div className="container">
                 <h3 className="our-menu__title section__title">Our Menu</h3>
@@ -176,7 +176,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-        </div> */}
+        </div> 
         </>
      );
 }

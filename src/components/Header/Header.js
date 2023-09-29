@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
 
 import logo from './images/Logo.svg';
 import './header.scss';
@@ -8,19 +9,36 @@ import SocialList from '../SocialList/SocialList';
 
 const Header = () => {
 
+    //opening menu
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenuOpen = () => {
         setMenuOpen(!menuOpen);
     }
 
+
+    //sticky menu
+    const [stickMenu, setStickMenu] = useState('header');
+
+    function fixingMenu() {
+        if(window !== undefined) {
+            let windowHeight = window.scrollY;
+            windowHeight > 200 ? setStickMenu('header fixed') : setStickMenu('header');
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', fixingMenu);
+    })
+
+
+
     return ( 
         <>
-        <header className="header">
+        <header className={stickMenu}>
             <div className="container">
                 <div className="header__wrapper">
                     <div className="header__inner">
-                        <a href="#" className="logo"><img src={logo} alt="logo" className="logo__img" /></a>
+                        <NavLink to="/" className="logo"><img src={logo} alt="logo" className="logo__img" /></NavLink>
                         <div className="menu">
                             <button className="menu__btn" onClick={toggleMenuOpen}>
                                 <span></span>
@@ -32,12 +50,22 @@ const Header = () => {
                                 <button className="menu__info-close" onClick={toggleMenuOpen}>x</button>
                                 <div className="menu__info-inner">
                                     <nav className="menu__nav">
-                                        <ul className="menu__list">
-                                            <li className="menu__list-item"><a href="#" className="menu__list-link">Home</a></li>
-                                            <li className="menu__list-item"><a href="#" className="menu__list-link">Menu</a></li>
-                                            <li className="menu__list-item"><a href="#" className="menu__list-link">Blogs</a></li>
-                                            <li className="menu__list-item"><a href="#" className="menu__list-link">About</a></li>
-                                            <li className="menu__list-item"><a href="#" className="menu__list-link">Contact</a></li>
+                                        <ul className="menu__list"  onClick={toggleMenuOpen}>
+                                            <li className="menu__list-item">
+                                                <NavLink to="/" className="menu__list-link">Home</NavLink>
+                                            </li>
+                                            <li className="menu__list-item">
+                                                <NavLink to="/menu" className="menu__list-link">Menu</NavLink>
+                                            </li>
+                                            <li className="menu__list-item">
+                                                <NavLink to="/blog" className="menu__list-link">Blogs</NavLink>
+                                            </li>
+                                            <li className="menu__list-item">
+                                                <NavLink to="/about" className="menu__list-link">About</NavLink>
+                                            </li>
+                                            <li className="menu__list-item">
+                                                <NavLink to="/contacts" className="menu__list-link">Contact</NavLink>
+                                            </li>
                                         </ul>
                                     </nav>
 

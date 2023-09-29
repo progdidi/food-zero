@@ -37,7 +37,7 @@ const MainPage = () => {
             <div className="container">
                 <div className="promo__inner">
                     <div className="promo__main">
-                        <h1 className="promo__main-title">Healthy Eating <br /> is important <br /> part of lifestyle</h1>
+                        <h1 className="promo__main-title">Healthy Eating <br/> is important <br/> part of lifestyle</h1>
                         <p className="promo__main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
                         <div className="promo__main-scroll">Scroll-----------------------------</div>
                     </div>
@@ -68,7 +68,7 @@ const MainPage = () => {
                 
             </div>
         </section>
-
+{/* 
         <section className="our-menu">
             <div className="container">
                 <h3 className="our-menu__title section__title">Our Menu</h3>
@@ -124,24 +124,9 @@ const MainPage = () => {
                     {blogItems.map((blog) => {
                         if(blog.main) {
                             return (
-                                <BlogItem
-                                    key={blog.id}
-                                    name={blog.name}
-                                    descr={blog.descr} 
-                                    img={blog.img}
-                                    tag={blog.tag}
-                                    date={blog.date}
-                                    time={blog.time}
-                                    comments={blog.comments}
-                                    author={blog.author}
-                                    authorImg={blog.authorImg}
-                                    link={blog.link}
-                                />
+                                <BlogItem key={blog.id} blog={blog}/>
                             )   
-                        } else {
-                            return '';
-                        }
-                                               
+                        }                   
                     })}
                 </div>
             </div>
@@ -191,7 +176,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         </>
      );
 }

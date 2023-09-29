@@ -13,14 +13,8 @@
     }
 
     &__name {
-        font-family: "Rufina", sans-serif;
-        font-size: 68px;
-        font-weight: 700;
-        line-height: 84px; 
+        @include font68;
         padding: 24px 0;
-    }
-
-    &__descr {
-
+        
     }
 }

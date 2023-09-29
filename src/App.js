@@ -23,12 +23,12 @@ function App() {
               <Route path="/contacts" element={<ContactsPage/>} />
               <Route path="/about" element={<AboutPage/>} />
               <Route path="/portfolio" element={<PortfolioPage/>} />
-              <Route path="/dish" element={<DishPage/>} />
+              <Route path="/dish/:id" element={<DishPage/>} />
               <Route path="/blog" element={<BlogPage/>} />
               <Route path="/article" element={<BlogArticlePage/>} />
             </Routes>
           </main>      
-        <Footer/>
+        {/* <Footer/> */}
       </div>
 
     </Router>

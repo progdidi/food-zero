@@ -1,3 +1,5 @@
+import { useParams } from "react-router";
+
 import PagePromo from "../../components/PagePromo/PagePromo";
 
 //images
@@ -10,8 +12,14 @@ import divider from './images/divider.svg';
 import './dishPage.scss';
 
 const DishPage = () => {
+
+    const {id} = useParams();
+    console.log(id);
+
+
     return ( 
         <>
+
             <PagePromo title="Deep Sea Snow White Cod Fillet" bgImage={banner}/>
 
             <section className="dish-article">

@@ -35,7 +35,7 @@
                 left: 0;
                 top: 0;
                 transform: translateX(-200%);
-                transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+                transition: all 1s ease;
                 z-index: 10;
                 &.open {
                     transform: translateX(0);
@@ -134,6 +134,11 @@
                 padding: 20px 46px;
             }
         }
+    }
+    &.fixed {
+        background-color: $main-color;
+        position: fixed;
+        z-index: 20;
     }
 }
 

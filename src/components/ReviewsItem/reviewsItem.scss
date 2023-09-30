@@ -31,3 +31,16 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .review-item__info {
+        gap: 30px;
+
+        .review-item__img {
+            object-fit: cover;
+            max-width: 30%;
+        }
+
+    }
+
+}

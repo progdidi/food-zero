@@ -86,6 +86,28 @@
     }
 }
 
+@media (max-width: 650px) {
+    .blog-item {
+        &__media {
+            margin-bottom: 30px;
+        }
+
+        &__info {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            margin-bottom: 30px;
+            &-text::after {
+                display: none;
+            }
+        }
+
+        &__descr {
+            margin-bottom: 30px;
+            font-size: 19px;
+        }
+    }
+}
+
 
 
 

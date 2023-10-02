@@ -23,6 +23,7 @@
     }
 }
 
+
 @media (max-width: 1600px) {
     .page-promo__title {
         font-size: 120px;
@@ -31,18 +32,38 @@
     }
 }
 
-@media (max-width: 700px) {
-    .page-promo__title {
-        font-size: 72px;
-        font-weight: 700;
-        line-height: 82px;
+@media (max-width:900px) {
+    .page-promo {
+        height: 70vh;
+        padding-top: 200px;
+        &__title {
+            font-size: 80px;
+            line-height: 92px;
+            max-width: 80%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .page-promo {
+        height: 50vh;
+        padding-top: 150px;
+        &__title {
+        font-size: 62px;
+        line-height: 70px;
+        }
     }
 }
 
 @media (max-width: 500px) {
-    .page-promo__title {
+    .page-promo {
+        height: 40vh;
+        padding-top: 120px;
+        &__title {
         font-size: 48px;
         font-weight: 700;
         line-height: 58px;
+        }
     }
 }

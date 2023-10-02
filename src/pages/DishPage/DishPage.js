@@ -56,7 +56,9 @@ const DishPage = () => {
                             <h6 className="dish-article__link-name">Strip Steak With Rosemary Butter</h6>
                         </a>
 
-                        <img src={divider} alt="" className="dish-article__links-divider" />
+                        <div className="divider">
+                            <img src={divider} alt="" className="divider__img" />
+                        </div>
 
                         <a href="" className="dish-article__link">
                             <p className="dish-article__link-text">Next page</p>

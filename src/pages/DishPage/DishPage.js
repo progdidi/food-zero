@@ -24,7 +24,6 @@ const DishPage = () => {
 
             <section className="dish-article">
                 <div className="container">
-                    <div className="dish-article__main">
                         <div className="dish-article__item">
                             <img src={dish1} alt="dish" className="dish-article__item-img" />
                             <div className="dish-article__info">
@@ -45,8 +44,7 @@ const DishPage = () => {
                                 <h5 className="dish-article__subtitle item__title">Cooking Suggestions</h5>
                                 <p className="dish-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et in sed in pellentesque ornare nunc nisl. Augue habitant accumsan, ut parturient orci ac etiam congue mi. </p>
                             </div>
-                        </div>
-                    </div>                    
+                        </div>             
                 </div>
             </section>
 

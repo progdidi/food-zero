@@ -18,17 +18,8 @@ const BlogPage = () => {
                         {blogItems.map((blog) => {
                             return (
                                 <BlogItem
+                                    blog={blog}
                                     key={blog.id}
-                                    name={blog.name}
-                                    descr={blog.descr} 
-                                    img={blog.img}
-                                    tag={blog.tag}
-                                    date={blog.date}
-                                    time={blog.time}
-                                    comments={blog.comments}
-                                    author={blog.author}
-                                    authorImg={blog.authorImg}
-                                    link={blog.link}
                                 />
                             )                            
                         })}

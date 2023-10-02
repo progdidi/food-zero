@@ -63,7 +63,7 @@ const AboutPage = () => {
                         <button className="video-btn"> <img src={play} alt="play" className="video-btn__img" /></button>
                     </div>
                 </div>
-            </section>
+            </section> 
 
             <section className="process">
                 <div className="container">

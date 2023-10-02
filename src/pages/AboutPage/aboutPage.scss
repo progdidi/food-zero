@@ -15,16 +15,19 @@
 
     }
     &__story {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 32% 74%;
+        gap: 60px;
         padding-bottom: 117px;
         margin-bottom: 162px;
         &-info {
-            max-width: 40%;
             .about-us__story-title {
                 margin-bottom: 18px;
             }
+        }
+        &-img {
+            object-fit: cover;
+            max-width: 80%;
         }
     }
 
@@ -32,6 +35,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 60px;
         .about-us__staff-info {
             display: flex;
             flex-direction: column;
@@ -149,7 +153,19 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media(max-width: 1200px) {
+    .about-us__staff {
+        flex-direction: column;
+        margin-bottom: 100px;
+        &:last-child {
+            flex-direction: column-reverse;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1100px) {    
+
     .video {
         padding: 100px 0;
         min-height: 50vh;
@@ -182,9 +198,49 @@
             align-items: center;
         }
     }
+
+
+}
+
+@media (max-width: 950px) {
+    .about-us {
+        padding: 100px 0;
+        &__story {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-info {
+            text-align: center;
+        }
+        }
+        &__staff {
+            &-img {
+                object-fit: cover;
+                max-width: 80%;
+            }
+        }
+    }
 }
 
 @media (max-width: 830px) {
+    .about-us {
+        &__staff-title {
+            text-align: center;
+        }
+        &::before {
+            background-position: top right;
+            width: 30%;
+            height: 30%;
+            background-size: contain;
+            top: 0;
+            right: 0;
+            left:auto;
+        }
+        &__story-img {
+            max-width: 100%;
+        }
+    }
     .video {
         &__title {
             font-size: 50px;
@@ -235,12 +291,17 @@
             }
             &.third {
                 flex-direction: column;
+                margin-bottom: 0;
             }
         }
     }
 }
 
 @media (max-width: 600px) {
+    .about-us__story {
+        padding-bottom: 60px;
+        margin-bottom: 80px;
+    }
     .video {
         padding: 70px 0;
         &__title {
@@ -273,6 +334,9 @@
 }
 
 @media (max-width: 420px) {
+    .about-us__story {
+        margin-bottom: 30px;
+    }
     .process__item-title {
         font-size: 35px;
     }

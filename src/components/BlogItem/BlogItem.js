@@ -11,10 +11,13 @@ const BlogItem = ({blog}) => {
             <div className="blog-item__main">
                 <div className="blog-item__info">
                     <img src={blog.authorImg} alt="author" className="blog-item__info-img" />
-                    <p className="blog-item__info-text">{blog.author}</p>
-                    <p className="blog-item__info-text">{blog.date}</p>
-                    <p className="blog-item__info-text">{blog.time}</p>
-                    <p className="blog-item__info-text">{blog.comments} comments</p>
+                    <div className="blog-item__info-inner">
+                        <p className="blog-item__info-text">{blog.author}</p>
+                        <p className="blog-item__info-text">{blog.date}</p>
+                        <p className="blog-item__info-text">{blog.time}</p>
+                        <p className="blog-item__info-text">{blog.comments} comments</p>
+                    </div>
+                    
                 </div>
 
                 <h5 className="blog-item__title item__title">{blog.name}</h5>

@@ -7,7 +7,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 100px;
+            gap: 60px;
             margin-bottom: 120px;
         }
     }
@@ -20,18 +20,37 @@
                 display: grid;
                 grid-template-columns: 2fr 3fr;
                 gap: 60px;
+                align-items: start;
+                &__info {
+                    margin-bottom: 15px;
+                }
+                &__descr {
+                    margin-bottom: 20px;
+                }
                 
             }
         }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
     .blog {
         &__inner {
             .blog-item {
+                gap: 30px;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                &__tag {
+                    left: 0;
+                } 
+                
+                &__info {
+                    margin-bottom: 30px;
+                }
+                
             }
         }
     }

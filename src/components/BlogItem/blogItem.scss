@@ -26,6 +26,10 @@
         align-items: center;
         gap: 14px;
         margin-bottom: 48px;
+        &-inner {
+            display: flex;
+            gap: 14px;
+        }
         &-text {
             color: $main-color;
             font-size: 18px;
@@ -86,28 +90,24 @@
     }
 }
 
-@media (max-width: 650px) {
-    .blog-item {
-        &__media {
-            margin-bottom: 30px;
-        }
-
-        &__info {
-            display: grid;
-            grid-template-columns: 40% 40%;
-            margin-bottom: 30px;
-            &-text::after {
-                display: none;
-            }
-        }
-
-        &__descr {
-            margin-bottom: 30px;
-            font-size: 19px;
+@media (max-width: 900px) {
+    .blog-item__info {
+        gap: 20px;
+        &-inner {
+        max-width: 80%;
+        flex-wrap: wrap;
         }
     }
 }
 
+@media (max-width: 650px) {
+    .blog-item {
+        
+        &__media {
+            margin-bottom: 30px;
+        }
+    }
+}
 
 
 

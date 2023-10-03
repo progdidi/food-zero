@@ -15,7 +15,7 @@ const BlogArticlePage = () => {
 
             <div className="blog-article">
                 <div className="container">
-                    <div className="blog-article__content">
+                    
                         <p className="blog-article__text main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nisi veniam optio eius ducimus temporibus qui, molestias ut. Culpa ea quos minus dolor modi! Id ex harum suscipit pariatur ratione.</p>
 
                         <div className="blog-article__media">
@@ -35,15 +35,19 @@ const BlogArticlePage = () => {
 
                         <p className="blog-article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae dolores recusandae officia, iure reprehenderit commodi, est perspiciatis voluptates similique ipsum voluptatem? Molestiae porro, consequuntur in vel temporibus quia non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ducimus mollitia pariatur nihil voluptatum doloremque accusantium error dicta. At placeat eos deserunt neque quos repellat numquam culpa blanditiis dolorum assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusantium ratione suscipit culpa nulla aliquid, repellendus quibusdam a dolor cum atque similique voluptas. Placeat quo ex perspiciatis, ullam aperiam exercitationem. </p>
 
-                    </div>
+                    
 
                     <div className="blog-article__tags">
-                        Tags: <button className="blog-article__tag tag">Design</button>
+                        <h6 className="blog-article__tags-title">Tags: </h6>
+                        <div className="blog-article__tags-inner">
+                            <button className="blog-article__tag tag">Design</button>
                             <button className="blog-article__tag tag">Photography</button>
                             <button className="blog-article__tag tag">Images</button>
                             <button className="blog-article__tag tag">Video</button>
                             <button className="blog-article__tag tag">Design</button>
                             <button className="blog-article__tag tag">Design</button>
+                        </div>
+                        
                     </div>
 
                     <div className="blog-article__author">

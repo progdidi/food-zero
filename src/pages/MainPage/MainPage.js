@@ -39,7 +39,7 @@ const MainPage = () => {
                     <div className="promo__main">
                         <h1 className="promo__main-title">Healthy Eating <br/> is important <br/> part of lifestyle</h1>
                         <p className="promo__main-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu</p>
-                        <div className="promo__main-scroll">Scroll-----------------------------</div>
+                        <div className="promo__main-scroll">Scroll----------------------</div>
                     </div>
                     <div className="promo__media">
                         <div className="promo__media-spices">

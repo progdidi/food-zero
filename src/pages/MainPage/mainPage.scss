@@ -143,10 +143,10 @@
 }
 
 .categories {
-    padding: 128px 138px;
+    padding: 128px 0px 138px;
     &__title {
         text-align: center;
-        max-width: 70%;
+        max-width: 60%;
         margin: 0 auto;
         margin-bottom: 18px;
     }
@@ -168,9 +168,27 @@
     background-image: url(./images/reviews.svg);
     background-repeat: no-repeat;
     background-position: right;
+    padding: 118px 0 145px;
+    font-family: "Rufina", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
     &__inner {
-        padding: 118px 0 145px;
+        position: relative;
     }
+    .reviews__slider-buttons {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 40px;
+        .reviews__slider-info {
+            display: flex;
+        }
+    }
+  
 }
 
 @media(max-width: 1600px) {
@@ -222,6 +240,21 @@
         padding: 170px 0;
         &__inner {
             grid-column-gap: 20px ;
+        }
+    }
+
+    .categories {
+        padding: 100px 0px 100px;
+        &__title {
+            max-width: 80%;
+        }
+    
+        &__descr {
+            margin-bottom: 80px;
+        }
+    
+        &__inner {
+            grid-column-gap: 30px;
         }
     }
 
@@ -301,6 +334,23 @@
         }
     }
 
+    .categories {
+        &__inner {
+            gap: 15px;
+            margin: 0 auto;
+            .category-item {
+                &__link {
+                    font-size: 24px;
+                    left: 10px;
+                    top: 10px;
+                    &-img {
+                        max-width: 15%;
+                    }
+                }
+            }
+        }
+    }
+
     
 }
 
@@ -351,13 +401,15 @@
         &__inner {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            grid-gap: 60px;
+            grid-gap: 20px;
+            max-width: 70%;
+            margin: 0 auto;
         }
     }
 
 }
 
-@media (max-width: 490px) {
+@media (max-width: 520px) {
     .promo {
         .promo__inner {
            background-size: 100%;
@@ -387,6 +439,60 @@
             }
             
         }
+    }
+
+    .benefits {
+        padding: 70px 0;
+    }
+
+    .blog-preview {
+        padding-top: 10px;
+        padding-bottom: 70px;
+        &__inner {
+            grid-row-gap: 70px;
+        }
+        .blog-item {
+            &__media {
+                margin-bottom: 30px;
+            }
+    
+            &__title {
+                font-size: 22px;
+                line-height: 30px;
+            }
+    
+            &__info {
+                margin-bottom: 15px;
+                &-inner {
+                    gap: 8px;
+                    .blog-item__info-text {
+                        font-size: 14px;
+                    }
+                }
+            }
+    
+            &__descr {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            &__link::after {
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: left center;
+            }
+        }
+    }
+
+    .categories {  
+        padding: 70px 0;
+        &__inner {
+            max-width: 90%;
+        }
+    }
+
+    .reviews {
+        padding: 70px 0;
     }
 
 }

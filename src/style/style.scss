@@ -93,6 +93,11 @@ input {
     .main-btn {
         padding: 15px 26px;
     }
+
+    .section__title {
+        font-size: 79px;
+        line-height: 88px;
+    }
     .item__title {
         font-size: 36px;
         line-height: 47px;
@@ -101,8 +106,8 @@ input {
 
 @media (max-width: 780px) {
     .section__title {
-        font-size: 75px;
-        line-height: 80px;
+        font-size: 62px;
+        line-height: 78px;
     }
 
     .item__title {

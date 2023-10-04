@@ -13,6 +13,8 @@ import CategoryItem from '../../components/CategoryItem/CategoryItem';
 
 import { reviews } from '../../helpers/reviews/reviews';
 import ReviewsItem from '../../components/ReviewsItem/ReviewsItem';
+import prev from './images/prevArr.svg';
+import next from './images/nextArr.svg';
 
 import ReservationSection from '../../components/ReservationSection/ReservationSection';
 
@@ -171,8 +173,12 @@ const MainPage = () => {
                     </div>
 
                     <div className="reviews__slider-buttons">
-                        <button className="reviews__slider-btn"></button>
-                        <button className="reviews__slider-btn"></button>
+                        <button className="reviews__slider-btn"> <img src={prev} alt="" className="reviews__slider-btn-img" /> </button>
+                        <div className="reviews__slider-info">
+                            <p className="reviews__slider-num">2</p> /
+                            <p className="reviews__slider-num">3</p>
+                        </div>
+                        <button className="reviews__slider-btn"> <img src={next} alt="" className="reviews__slider-btn-img" /> </button>
                     </div>
                 </div>
             </div>

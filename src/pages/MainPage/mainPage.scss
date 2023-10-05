@@ -183,6 +183,7 @@
         right: 0;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         gap: 40px;
         .reviews__slider-info {
             display: flex;
@@ -351,6 +352,22 @@
         }
     }
 
+    .reviews {
+        .reviews__slider-buttons {
+            gap: 15px;
+            bottom: -100px;
+            right: unset;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            line-height: 35px;
+            .reviews__slider-btn {
+                width: 50px;
+            }
+        }
+    }
+    
+
     
 }
 
@@ -492,7 +509,10 @@
     }
 
     .reviews {
-        padding: 70px 0;
+        padding-top: 70px;
+        .reviews__slider-buttons {
+            bottom: -100px;
+        }
     }
 
 }

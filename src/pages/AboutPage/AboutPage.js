@@ -1,13 +1,14 @@
 //components
 import PagePromo from "../../components/PagePromo/PagePromo";
 import ReservationSection from "../../components/ReservationSection/ReservationSection";
+import VideoAbout from "../../components/VideoAbout/VideoAbout";
 
 //images
 import banner from './images/banner.png';
 import about1 from './images/about1.png';
 import manager from './images/manager.png';
 import chef from './images/chef.png';
-import play from './images/play.svg';
+
 
 import process1 from './images/process1.png';
 import process2 from './images/process2.png';
@@ -55,15 +56,7 @@ const AboutPage = () => {
                 </div>
             </section>
 
-            <section className="video">
-                <div className="container">
-                    <div className="video__inner">
-                        <h3 className="video__title section__title">It looks delicious</h3>
-                        <p className="video__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <button className="video-btn"> <img src={play} alt="play" className="video-btn__img" /></button>
-                    </div>
-                </div>
-            </section> 
+            <VideoAbout/>
 
             <section className="process">
                 <div className="container">

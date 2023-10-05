@@ -33,15 +33,32 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    .review-item__text {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
     .review-item__info {
         gap: 30px;
 
         .review-item__img {
             object-fit: cover;
-            max-width: 30%;
+            max-width: 20%;
         }
 
     }
+}
+
+@media (max-width: 700px) {
+    .review-item {
+        &__text {
+            text-align: center;
+        }
+        &__info {
+            justify-content: center;
+        }
+    }
+    
 
 }

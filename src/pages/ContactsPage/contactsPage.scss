@@ -85,6 +85,9 @@
             }
             &:last-child {
                 flex-direction: column-reverse;
+                .contacts__item-img {
+                    max-width: 100%;
+                }
             }
             &-btn {
                 display: block;
@@ -96,7 +99,17 @@
 }
 
 @media (max-width: 620px) {
-    .contacts__item-btn {
-        width: 200px;
+    .contacts {
+        &__item {
+            &-img {
+                max-width: 100%;
+            }
+            &-info {
+                max-width: 100%;
+            &-btn {
+                width: 200px;
+            }
+        }
     }
+}
 }

@@ -19,7 +19,8 @@ import './aboutPage.scss';
 const AboutPage = () => {
     return ( 
         <>
-            <PagePromo title="Who We Are" descr="The most important thing for us is to give you the comfortable dining experience" bgImage={banner}/>
+            <PagePromo title="Who We Are" descr="The most important thing for us is to give you the comfortable dining experience" bgImage={banner} 
+            />
 
             <section className="about-us">
                 <div className="container">

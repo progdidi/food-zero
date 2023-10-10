@@ -2,6 +2,7 @@
 
 .category-item {
     position: relative;
+    transition: all 0.5s;
     &__link {
         position: absolute;
         display: flex;
@@ -11,5 +12,8 @@
         left: 40px;  
         color: $dark-green-color;
 
+    }
+    &:hover {
+        transform: scale(1.1);
     }
 }

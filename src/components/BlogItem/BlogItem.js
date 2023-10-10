@@ -2,7 +2,7 @@ import './blogItem.scss';
 
 const BlogItem = ({blog}) => {
     return ( 
-        <div className="blog-item">
+        <a href="" className="blog-item">
             <div className="blog-item__media">
                 <p className="blog-item__tag">{blog.tag}</p>
                 <img src={blog.img} alt="" className="blog-item__img" />
@@ -27,7 +27,7 @@ const BlogItem = ({blog}) => {
             </div>
 
            
-        </div>
+        </a>
      );
 }
  

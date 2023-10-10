@@ -1,6 +1,7 @@
 //components
 import PagePromo from "../../components/PagePromo/PagePromo";
 import ReservationSection from "../../components/ReservationSection/ReservationSection";
+import OpenTime from "../../components/OpenTime/OpenTime";
 
 //images
 import banner from './images/banner.png';
@@ -13,7 +14,10 @@ import './contactsPage.scss';
 const ContactsPage = () => {
     return ( 
         <>
-            <PagePromo title="Get in Touch" descr="The freshest ingredients for you every day" bgImage={banner}/>
+            <PagePromo title="Get in Touch" descr="The freshest ingredients for you every day" bgImage={banner} more={<OpenTime/>}
+            />
+
+            
             
             <div className="contacts">
                 <div className="container">

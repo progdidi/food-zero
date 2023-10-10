@@ -1,11 +1,14 @@
 @import '../../style/base/vars.scss';
 
+
+
 .contacts {
     padding-top: 272px;
     padding-bottom: 40px;
     @include font32;
     color: $dark-green-color;
     position: relative;
+    
     &__item {
         margin-bottom: 145px;
         display: grid;

@@ -2,6 +2,11 @@
 
 
 .menuItem {
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    display: block;
+    margin-bottom: 10px;
     &__price {
         padding-bottom: 12px;
         font-family: "Rufina", sans-serif;
@@ -16,6 +21,12 @@
         @include font68;
         padding: 24px 0;
         
+    }
+    &:hover {
+        transform: scale(1.05);
+        background-color: $main-color;
+        color: #fff;
+        padding: 15px;
     }
 }
 

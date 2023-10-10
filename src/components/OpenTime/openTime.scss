@@ -1,0 +1,31 @@
+@import '../../style/base/vars.scss';
+
+.open-time {
+    width: 700px;
+    color: #fff;
+    &__title {
+        font-family: 'Rufina', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        display: inline-block;
+    }
+    &__top {
+        padding-bottom: 38px;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__info {
+        padding-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .open-time__text {
+            width: 150px;
+        }
+    }
+}
